@@ -4,7 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Images from "./assets/components/Images";
 function App() {
-  <Images />;
+  return (
+    <>
+      <Images />
+    </>
+  );
 }
 
 export default App;

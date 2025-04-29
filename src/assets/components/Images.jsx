@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Images = () => {
   const handleClick = (id) => {
@@ -15,7 +15,13 @@ const Images = () => {
   const [isAnimalsVisible, setIsAnimalsVisible] = useState(true);
   const [isFlowersVisible, setIsFlowersVisible] = useState(true);
   const [data, setData] = useState([
-    { id: 0, alt: "Mak", filename: "obraz1.jpg", category: 1, downloads: 35 },
+    {
+      id: 0,
+      alt: "Mak",
+      filename: "obraz1.jpg",
+      category: 1,
+      downloads: 35,
+    },
     {
       id: 1,
       alt: "Bukiet",
@@ -44,9 +50,27 @@ const Images = () => {
       category: 2,
       downloads: 43,
     },
-    { id: 5, alt: "Audi", filename: "obraz6.jpg", category: 3, downloads: 11 },
-    { id: 6, alt: "kotki", filename: "obraz7.jpg", category: 2, downloads: 22 },
-    { id: 7, alt: "Róża", filename: "obraz8.jpg", category: 1, downloads: 33 },
+    {
+      id: 5,
+      alt: "Audi",
+      filename: "obraz6.jpg",
+      category: 3,
+      downloads: 11,
+    },
+    {
+      id: 6,
+      alt: "kotki",
+      filename: "obraz7.jpg",
+      category: 2,
+      downloads: 22,
+    },
+    {
+      id: 7,
+      alt: "Róża",
+      filename: "obraz8.jpg",
+      category: 1,
+      downloads: 33,
+    },
     {
       id: 8,
       alt: "Świnka morska",
